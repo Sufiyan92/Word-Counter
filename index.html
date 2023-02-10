@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+</head>
+<style>
+    body {
+        background-image: linear-gradient(90deg, orange, white, green);
+    }
+
+    .container {
+        max-width: 80%;
+        margin: auto;
+        margin-top: 20px;
+        /* border: solid 1px black; */
+    }
+
+    h1 {
+        text-align: center;
+        color: aliceblue;
+        background-color: blueviolet;
+        padding: 10px;
+        margin: 0;
+    }
+
+    textarea {
+        font-size: 20px;
+        border: solid 5px blueviolet;
+        width: 99%;
+        margin: 0;
+        font-weight: bold;
+        resize: none;
+    }
+
+    .output {
+        font-size: 20px;
+        text-align: center;
+        color: aliceblue;
+        background-color: blueviolet;
+        padding: 10px;
+        margin: 0;
+    }
+
+    #word,
+    #char {
+        font-size: 40px;
+        color: rgb(255, 255, 0);
+        font-weight: bolder;
+    }
+
+    .para {
+        font-size: 22px;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>Word and Character Counter</h1>
+        <textarea name="text" id="textArea" cols="30" rows="10"></textarea>
+        <div class="output">
+            <span id="word">0</span>
+            <span class="para">Words and </span>
+            <span id="char">0</span>
+            <span class="para">Charecters</span>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
